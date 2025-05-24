@@ -1,0 +1,40 @@
+<div class="luxury-gallery">
+  <div class="gallery-header">
+  <h1><span class="emoji">📸</span> Timeless Moments <span class="emoji">✨</span></h1>
+  <p>Where every pixel tells a story and every frame holds emotion 🌟</p>
+</div>
+
+  
+  <div class="gallery-grid">
+    <div class="gallery-item" *ngFor="let image of images; let i = index" 
+         [style.--animation-delay]="i * 0.1 + 's'">
+      <img [src]="image.path" [alt]="image.title" class="gallery-img" loading="lazy">
+      <div class="gallery-overlay">
+        <div class="overlay-content">
+           <h3 class="gallery-title">{{ image.title }}</h3>
+         <!-- <p class="gallery-description">{{ image.description }}</p> -->
+          <div class="gallery-actions">
+  <button class="gallery-btn" 
+          [class.liked]="image.liked"
+          (click)="toggleLike(i)">
+    <i class="fas" [ngClass]="{'fa-heart': image.liked, 'fa-heart-o': !image.liked}"></i> 
+    {{ image.likes }}
+  </button>
+  <button class="gallery-btn secondary">
+    <i class="fas fa-expand"></i> View
+  </button>
+</div>
+
+
+        </div>
+      </div>
+      <div class="gallery-badge" *ngIf="image.featured">
+        <i class="fas fa-star"></i> Featured
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+</div>
