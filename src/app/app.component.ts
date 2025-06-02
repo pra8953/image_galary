@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
   }
 
   loadInitialImages() {
-    for (let i = 1; i <= 24; i++) {
+    for (let i = 1; i <= 57; i++) {
       this.images.push({
         path: `assets/img${i}.jpg`,
         title: this.titles[i-1],
