@@ -16,7 +16,8 @@ export class AppComponent implements OnInit {
     "Simran", "Prashant", "Simran", "Simran", "Simran",
     "Simran", "Simran", "Simran", "Prashant", "Prashant",
     "Prashant", "Prashant and Simran", "Simran", "Prashant and Simran", "Prashant and Simran"
-    , "Prashant and Simran", "Prashant and Simran" , "Prashant and Simran", "Prashant and Simran" 
+    , "Prashant and Simran", "Prashant and Simran" , "Prashant and Simran", "Prashant and Simran" ,
+    "simran","simran","simran","simran","simran","simran and prashant","simran and prashant","simran","simran","simran","simran","simran","simran and prashant","simran","simran and prashant","simran","simran","simran","simran","simran","simran","simran","simran","simran","simran","simran","simran","simran","simran","simran","simran","simran","simran and Prashant",
   ];
   descriptions = [
     "A breathtaking view that captures nature's grandeur",
