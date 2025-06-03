@@ -595,3 +595,14 @@
 .gallery-btn.liked i {
   color: #ff4d4d;
 }
+
+
+/* Add this to your CSS */
+.gallery-btn .fa-download {
+  transition: transform 0.3s ease;
+}
+
+.gallery-btn:hover .fa-download {
+  transform: translateY(2px);
+  color: var(--primary-color);
+}

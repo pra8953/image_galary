@@ -20,11 +20,13 @@
     <i class="fas" [ngClass]="{'fa-heart': image.liked, 'fa-heart-o': !image.liked}"></i> 
     {{ image.likes }}
   </button>
-  <button class="gallery-btn secondary">
-    <i class="fas fa-expand"></i> View
+  <button class="gallery-btn secondary" (click)="downloadImage(image)">
+    <i class="fas fa-download"></i> Download
   </button>
+  <!-- <button class="gallery-btn secondary" (click)="openLightbox(i)">
+    <i class="fas fa-expand"></i> View
+  </button> -->
 </div>
-
 
         </div>
       </div>

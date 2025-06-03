@@ -117,4 +117,7 @@ export class AppComponent implements OnInit {
     link.download = image.title.replace(/\s+/g, '-').toLowerCase() + '.jpg';
     link.click();
   }
+
+
+  
 }
